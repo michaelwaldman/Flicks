@@ -18,6 +18,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
+import me.mwaldman.flicks.models.Config;
 import me.mwaldman.flicks.models.Movie;
 
 public class MovieListActivity extends AppCompatActivity {
@@ -41,6 +42,7 @@ public class MovieListActivity extends AppCompatActivity {
 
     RecyclerView rvMovies;
     MovieAdapter adapter;
+    Config config;
 
 
     @Override
@@ -103,12 +105,12 @@ public class MovieListActivity extends AppCompatActivity {
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 //get the image
                 try {
-                    JSONObject images = response.getJSONObject("images");
-                    imageBaseUrl = images.getString("secure_base_url");
-                    JSONArray posterSizeOptions = images.getJSONArray("poster_sizes");
-                    posterSize = posterSizeOptions.optString(3, "w342");
-                    Log.i(TAG, String.format("Loaded configuration with imageBaseUrl %s and posterSize %s", imageBaseUrl, posterSize));
+                    config = new Config(response);
+                    Log.i(TAG,
+                            String.format("Loaded configuration with imageBaseUrl %s and posterSize %s",
+                                    config.getImageBaseUrl(), config.getPosterSize()));
                     //get the now playing movie list
+                    adapter.setConfig(config);
                     getNowPlaying();
                 } catch (JSONException e) {
                     logError("failed parsing config", e, true);
