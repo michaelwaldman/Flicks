@@ -1,4 +1,4 @@
-# Project 2 - *Michael Waldman*
+# Project 2 - *Flicks*
 
 **Flicks** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
@@ -43,7 +43,7 @@ The adding of the Youtube videos was the most difficult, as it required one to d
 
 ## License
 
-    Copyright [2018] [Michael]
+    Copyright [2018] [Michael Waldman]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
