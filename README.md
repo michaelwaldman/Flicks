@@ -1,4 +1,4 @@
-# Project 2 - *Name of App Here*
+# Project 2 - *Michael Waldman*
 
 **Flicks** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
@@ -29,7 +29,7 @@ Added a custom ActionBar with custom coloring/size
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/HJsMoLn.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/ANLa5WV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
