@@ -39,4 +39,11 @@
         android:layout_below="@+id/tvTitle"
         android:numStars="5"
         android:stepSize="0.5" />
+
+    <ImageView
+        android:id="@+id/thumbnailHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOverview"
+        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 </RelativeLayout>

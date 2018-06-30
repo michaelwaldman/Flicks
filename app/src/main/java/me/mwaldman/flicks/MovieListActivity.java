@@ -60,6 +60,7 @@ public class MovieListActivity extends AppCompatActivity {
         getConfiguration();
 
 
+
     }
     //get the list of currently playing movies from api
     private void getNowPlaying(){

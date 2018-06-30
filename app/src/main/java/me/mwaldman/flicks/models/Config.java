@@ -3,7 +3,9 @@ package me.mwaldman.flicks.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+@Parcel
 public class Config {
     String imageBaseUrl;
 
@@ -20,7 +22,9 @@ public class Config {
         backdropSize = backdropSizeOptions.optString(1, "w780");
 
     }
+    public Config(){
 
+    }
     //helper for creating urls
     public String getImageUrl(String size, String path){
         return String.format("%s%s%s", imageBaseUrl, size, path);
