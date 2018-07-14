@@ -29,8 +29,7 @@ Added a custom ActionBar with custom coloring/size
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/ANLa5WV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+![Walkthrough](./instagif3.gif)
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
